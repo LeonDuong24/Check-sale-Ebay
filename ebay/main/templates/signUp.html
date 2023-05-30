@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/stylesignup.css">
+    <script defer src="./static/js/signup.js"></script>
+</head>
+    <div class="container">
+        <form id="form">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="user_name">Username</label>
+                <input id="user_name" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password_confirm"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <input type="submit" value="Register">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // Xử lý sự kiện submit form
+            $('#form').submit(function(event) {
+                event.preventDefault();
+
+                // Lấy dữ liệu từ form
+                var user_name = $('#user_name').val();
+                var email = $('#email').val();
+                var password_confirm = $('#password_confirm').val();
+                var password = $('#password').val();
+
+                // Gửi request POST đến API
+                $.ajax({
+                    url: '/register_process',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        user_name: user_name,
+                        email: email,
+                        password: password,
+                        password_confirm: password_confirm
+                    }),
+                    success: function(response) {
+                        // Hiển thị thông báo thành công
+                        $('#message').text(response.message);
+                    },
+                    error: function(xhr, status, error) {
+                        // Hiển thị thông báo lỗi
+                        var errorMessage = JSON.parse(xhr.responseText).message;
+                        $('#message').text(errorMessage);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

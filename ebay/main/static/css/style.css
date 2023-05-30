@@ -1,0 +1,77 @@
+.container{
+    
+}
+
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    animation: loginAnimation 1s ease-in-out;
+    
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  body {
+    background-image: url(https://img.freepik.com/premium-photo/photo-concrete-wall-empty-room-with-plants-floor-minimal-summer-exotic-concept-with-copy-space-generative-ai_1423-12320.jpg); /* Replace "your-image-url.jpg" with the actual URL or file path of your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    /* min-height: 100vh; */
+    font-family: poppins,sans-serif;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginBtn {
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 10px 20px;
+    border-radius:5px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  label,input{
+    outline: none;
+    font-family: poppins,sans-serif;
+  }
+
+  .smile-icon{
+    color: #6abf6d;
+  }
+
+  @keyframes loginAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

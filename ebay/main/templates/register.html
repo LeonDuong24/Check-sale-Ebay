@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form id="register-form">
+        <label for="username">Username:</label>
+        <input type="text" id="user_name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <label for="password">Rebeat Password:</label>
+        <input type="password" id="password_confirm" required><br>
+        <input type="submit" value="Register">
+    </form>
+
+    <div id="message"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Xử lý sự kiện submit form
+            $('#register-form').submit(function(event) {
+                event.preventDefault();
+
+                // Lấy dữ liệu từ form
+                var user_name = $('#user_name').val();
+                var email = $('#email').val();
+                var password_confirm = $('#password_confirm').val();
+                var password = $('#password').val();
+
+                // Gửi request POST đến API
+                $.ajax({
+                    url: '/register_process',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        user_name: user_name,
+                        email: email,
+                        password: password,
+                        password_confirm: password_confirm
+                    }),
+                    success: function(response) {
+                        // Hiển thị thông báo thành công
+                        $('#message').text(response.message);
+                    },
+                    error: function(xhr, status, error) {
+                        // Hiển thị thông báo lỗi
+                        var errorMessage = JSON.parse(xhr.responseText).message;
+                        $('#message').text(errorMessage);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.user-table-render-border{
+    border: 1px solid #4b4a4a;
+}
+.signup-container{
+    max-width: 400px;
+    margin: auto;
+}
+body {
+    background-image: url(https://img.freepik.com/premium-photo/photo-concrete-wall-empty-room-with-plants-floor-minimal-summer-exotic-concept-with-copy-space-generative-ai_1423-12320.jpg); /* Replace "your-image-url.jpg" with the actual URL or file path of your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    /* min-height: 100vh; */
+    font-family: poppins,sans-serif;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
