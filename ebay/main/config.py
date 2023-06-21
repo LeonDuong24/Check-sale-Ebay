@@ -1,9 +1,16 @@
+import json
 import os
 from urllib.parse import quote
-# uncomment the line below for postgres database url from environment variable
-# postgres_local_base = os.environ['DATABASE_URL']
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 basedir = os.path.abspath(os.path.dirname(__file__))
+
+def get_config_with_env(env):
+    root_folder = os.getcwd()
+    path_config=os.path.join(root_folder,'config',env+'.json')
+    with open(path_config, encoding="utf-8-sig") as f:
+                return json.loads( f.read())
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY', 'my_precious_secret_key')
@@ -14,11 +21,12 @@ class DevelopmentConfig(Config):
     # uncomment the line below to use postgres
     # SQLALCHEMY_DATABASE_URI = postgres_local_base
     DEBUG = True
+    config=get_config_with_env('dev')
     name_db="WebSale"
-    SQLALCHEMY_DATABASE_URI =  "mysql+pymysql://root:%s@localhost/WebSale?charset=utf8mb4"\
-                                        % quote('1234')
+    SQLALCHEMY_DATABASE_URI =  f"mysql+pymysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}/WebSale?charset=utf8mb4"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    
+    SQL_URL=f"mysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}:{config['mysql']['port']}/WebSale"
+
 
 
 class TestingConfig(Config):
@@ -30,9 +38,12 @@ class TestingConfig(Config):
 
 
 class ProductionConfig(Config):
-    DEBUG = False
-    # uncomment the line below to use postgres
-    # SQLALCHEMY_DATABASE_URI = postgres_local_base
+    DEBUG = True
+    config=get_config_with_env('prod')
+    name_db="WebSale"
+    SQLALCHEMY_DATABASE_URI =  f"mysql+pymysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}/WebSale?charset=utf8mb4"
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQL_URL=f"mysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}:{config['mysql']['port']}/WebSale"
 
 
 config_by_name = dict(

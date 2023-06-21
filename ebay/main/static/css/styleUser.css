@@ -1,5 +1,39 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #c8c7c7;
+    padding: 20px;
+    border-radius: 5px;
+}
+.close-button {
+    align-items: right;
+    
+     
+  }
+input,button{
+    outline: none;
+    border: none;
+}
 .user-table-render-border{
-    border: 1px solid #4b4a4a;
+    /* border: 1px solid #4b4a4a; */
+    background-color: rgb(238, 238, 230);
+    border-radius: 5px;
+}
+.crawl-info{
+    padding: 20px 0;
+    margin: 20px 0 0 0 !important;
+    background-color: rgb(137, 137, 130);
+    border-radius: 5px;
 }
 .signup-container{
     max-width: 400px;
@@ -14,7 +48,14 @@ body {
     /* min-height: 100vh; */
     font-family: poppins,sans-serif;
     height: 95vh;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
   }
+.table-scroll{
+    height: 510px !important;
+    overflow: auto;
+}
+.table-scroll::-webkit-scrollbar {
+    display: none;
+}

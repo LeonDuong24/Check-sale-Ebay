@@ -1,0 +1,9 @@
+{ 
+    "mysql": {
+      "type": "mysql",
+      "host": "68.178.202.90",
+      "port": 3306,
+      "user": "root",
+      "pwd": "Aopu6*0_1r=1ZS*09=+HN0Hv7cAFs&&x"
+    }
+  }

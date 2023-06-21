@@ -2,6 +2,23 @@
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     font-family: 'Poppins', sans-serif;
 } */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #b0b0b0;
+    padding: 20px;
+    border-radius: 5px;
+  }
 body {
     background-image: url(https://img.freepik.com/premium-photo/photo-concrete-wall-empty-room-with-plants-floor-minimal-summer-exotic-concept-with-copy-space-generative-ai_1423-12320.jpg); /* Replace "your-image-url.jpg" with the actual URL or file path of your background image */
     background-size: cover;
@@ -52,7 +69,7 @@ body {
 	display: block;
 	font-size: 12px;
 	padding: 10px;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .input-control input:focus {

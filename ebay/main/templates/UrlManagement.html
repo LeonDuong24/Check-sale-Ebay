@@ -12,37 +12,25 @@
   <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
-            <a class="navbar-brand" href="#">User {{current_user.user_name}}</a>
-            <button type="button" id="logoutBtn" class="btn btn-primary">Log out</button>
+            <a class="navbar-brand" href="#">Admin page</a>
+            <div>
+                <a href="/" type="button" id="mutBtn" class="btn btn-secondary">Manage user</a>
+                <a href="/all_url" type="button" id="mnBtn" class="btn btn-secondary">Manage link</a>
+                <button type="button" id="logoutBtn" class="btn btn-primary">Log out</button>
+            </div>
           </div>
         </nav>
   </header>   
   <div class="container">
-    <form method="POST" action="/add_url_process">
-      <div class="row crawl-info">
-        <div class="col-8">
-          <input id="search" name="url" type="text" placeholder="Link" class="d-inline w-100 p-2 rounded">
-        </div>
-        <div class="col-3">
-          <input id="location" name='price' type="text" placeholder="Price" class="d-inline w-100 p-2 rounded">
-        </div>
-        <div class="col-1">
-          <button class="btn-search d-inline w-100 p-2 rounded btn btn-primary" type="submit">Save</button>
-        </div>
-      </div>
-      
-      
-      
-      
-    </form> 
     <div class="table-scroll">
 
       <table class="table user-table-render-border table-striped mt-4">
           <thead>
             <tr>
+              <th class="col-1">User</th>
               <th class="col-1">Status</th>
               <th class="col-4">Link</th>
-              <th class="col-2">Price USD</th>
+              <th class="col-1">Price USD</th>
               <th class="col-3">Created</th>
               <th class="col-3">Lasted run</th>
               <th class="col-1">Action</th>
@@ -51,6 +39,7 @@
           <tbody>
             {%for crawl in crawlers%}
             <tr>
+              <td>{{crawl['user'].user_name}}</td>
               {% if crawl['status'] == 'Active' %}
               <th scope="row"><button type="button" class="btn btn-primary">{{ crawl['status'] }}</button></th>
               {% elif crawl['status'] == 'Pending' %}

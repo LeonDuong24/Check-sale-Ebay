@@ -1,0 +1,5 @@
+2023-06-20 17:37:51,792 - my_logger - ERROR - Traceback (most recent call last):
+  File "C:\Users\Alpaca\Desktop\web_ebay\Ebay_check_sale\ebay\service\user_service.py", line 49, in delet_user_with_id
+    flag=mysql.excute_query(query,engine)
+UnboundLocalError: local variable 'query' referenced before assignment
+
