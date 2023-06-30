@@ -1,3 +1,7 @@
+.href-opt{
+    text-decoration: none !important;
+    color: #333 !important;
+}
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -10,11 +14,27 @@
     align-items: center;
 }
 
-.popup-content {
+
+/* .popup-content {
     background-color: #c8c7c7;
     padding: 20px;
     border-radius: 5px;
-}
+} */
+.popup-content {
+    background-color: #e5e8e1;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .btn-close{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: red !important;
+    color: white !important;
+    padding-top: 0px !important;
+    padding-bottom: 8px !important;
+  }
 .close-button {
     align-items: right;
     

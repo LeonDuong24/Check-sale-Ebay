@@ -1,8 +1,10 @@
 import json
+import logging
 import os
 from urllib.parse import quote
 import sys
 import os
+from service.logger import config_log
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -23,6 +25,7 @@ class DevelopmentConfig(Config):
     DEBUG = True
     config=get_config_with_env('dev')
     name_db="WebSale"
+    logger=config_log()
     SQLALCHEMY_DATABASE_URI =  f"mysql+pymysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}/WebSale?charset=utf8mb4"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQL_URL=f"mysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}:{config['mysql']['port']}/WebSale"
@@ -41,6 +44,7 @@ class ProductionConfig(Config):
     DEBUG = True
     config=get_config_with_env('prod')
     name_db="WebSale"
+    logger=config_log()
     SQLALCHEMY_DATABASE_URI =  f"mysql+pymysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}/WebSale?charset=utf8mb4"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQL_URL=f"mysql://{config['mysql']['user']}:{config['mysql']['pwd']}@{config['mysql']['host']}:{config['mysql']['port']}/WebSale"

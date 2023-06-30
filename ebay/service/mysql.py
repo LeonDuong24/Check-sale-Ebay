@@ -11,8 +11,8 @@ from sqlalchemy import MetaData, Table, create_engine,text
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from main import CONFIG,ZONE
-from service.logger import logger
+from main import CONFIG,ZONE,logger
+
 
 def excute_query(query,engine):
     try:

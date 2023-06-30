@@ -1,7 +1,11 @@
 import uuid
 from main import db
 from model import models
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from main import CONFIG,ZONE,logger
+import traceback
 class Scraper():
     def __init__(self,url):
         super().__init__()
@@ -16,7 +20,7 @@ class Scraper():
             self.id_db=scraper.id
             return True
         except Exception as e:
-            print(e)
+            logger.error(traceback.format_exc())
             return False    
     
     def content_mail(self,product):

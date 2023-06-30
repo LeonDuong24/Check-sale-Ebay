@@ -11,14 +11,14 @@ from model import models
 from main import db
 from main.config import config_by_name
 from utils import date_time
-from service.logger import logger
+
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from service.session import check_price
 from service.decorate import retry
 from urllib.parse import urlparse
-from main import app,CONFIG,ZONE
+from main import app,CONFIG,ZONE,logger
 import pandas as pd
 from sqlalchemy import MetaData, Table, create_engine,text
 
@@ -39,7 +39,7 @@ def schedule_check_price():
                 print(time_now_int)
                 query = f"""select id,status,int_time_next_check 
                             from Crawl_data
-                            where status="Active" and int_time_next_check <= {time_now_int}
+                            where status="Active" and int_time_next_check <= {time_now_int-120}
                             limit 10
                         """
                 df = pd.read_sql_query(query,con=engine)

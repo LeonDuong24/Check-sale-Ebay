@@ -16,8 +16,7 @@ from sqlalchemy import MetaData, Table, create_engine,text
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from main import CONFIG,ZONE
-from service.logger import logger
+from main import CONFIG,ZONE,logger
 def get_user_by_id(user_id):
     return User.query.get(user_id)
 
@@ -109,8 +108,7 @@ def save_new_user(data):
                 'status': 'fail',
                 'message': 'System error',
             }
-        print(e)
-        print(traceback.format_exc())
+        logger.error(traceback.format_exc())
         return response_object, 409
 
 

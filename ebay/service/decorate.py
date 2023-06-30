@@ -1,7 +1,8 @@
 
 import functools
 import time
-
+import traceback
+from main import logger
 def retry(max_attempts, retry_interval):
     def decorator_retry(func):
         @functools.wraps(func)
@@ -13,6 +14,8 @@ def retry(max_attempts, retry_interval):
                     result = func(*args, **kwargs)
                     break
                 except Exception as e:
+                    if attempt+1==max_attempts:
+                        logger.error(traceback.format_exc())
                     attempt += 1
                     time.sleep(retry_interval)
             return result

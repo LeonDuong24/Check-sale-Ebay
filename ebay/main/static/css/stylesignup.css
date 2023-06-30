@@ -15,9 +15,16 @@
   }
   
   .popup-content {
-    background-color: #b0b0b0;
-    padding: 20px;
+    background-color: #e5e8e1;
+    padding: 30px;
     border-radius: 5px;
+    position: relative;
+  }
+  .btn-close{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #ff3860;
   }
 body {
     background-image: url(https://img.freepik.com/premium-photo/photo-concrete-wall-empty-room-with-plants-floor-minimal-summer-exotic-concept-with-copy-space-generative-ai_1423-12320.jpg); /* Replace "your-image-url.jpg" with the actual URL or file path of your background image */

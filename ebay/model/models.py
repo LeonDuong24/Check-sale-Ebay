@@ -35,6 +35,7 @@ class CrawlData(Base):
     int_time_next_check= Column(BigInteger,index=True)
     user = relationship('User', backref='Crawl_data', lazy=True)
     user_id=Column(String(255), ForeignKey('User.id'), nullable=False,index=True)
+    name_product = Column(Text)
 
 class User_type(Base):
     __tablename__ = 'User_type'

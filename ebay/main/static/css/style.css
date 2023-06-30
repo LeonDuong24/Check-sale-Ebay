@@ -1,6 +1,25 @@
 .container{
     
 }
+.user_group_btn{
+  display: flex;
+  justify-content: space-between;
+}
+.signUpBtn{
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  border-radius:5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: none;
+}
+.signUpBtn:hover{
+ background-color: #4CAB6A;
+}
 .popup-overlay {
   position: fixed;
   top: 0;
