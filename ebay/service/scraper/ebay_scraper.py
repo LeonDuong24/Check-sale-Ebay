@@ -96,7 +96,11 @@ class EbayScraper(Scraper):
             if result:
                 # Once all dropdown value are set, get the finally price
                 time.sleep(1)
-                result['Price'] = driver.find_element("css selector", ".x-price-primary").find_element("css selector", 'span[itemprop="price"]').get_attribute('content')#driver.find_element_by_id("prcIsum").text
+                #price=soup.select_one('.x-price-primary .ux-textspans').text
+                price=driver.find_element('xpath', '//div[@class="x-price-primary"]/span[@class="ux-textspans"]').text
+                number = re.findall(r'\d+\.\d+', price)
+                result['Price'] = number[0]#driver.find_element("css selector", ".x-price-primary").find_element("css selector", 'span[itemprop="price"]').get_attribute('content')#driver.find_element_by_id("prcIsum").text
+                print(result['Price'])
                 if len(result) == len_options +1:
                     results.append(result)
         return results
@@ -146,7 +150,8 @@ class EbayScraper(Scraper):
             option_str = ', '.join([f"{key}: {value}" for key, value in min_item.items()])
             product['name'] += ' '+option_str
         else:
-            price = soup.select_one('div.x-price-primary > span > span.ux-textspans').text
+            #price = soup.select_one('div.x-bin-price__content > div.x-price-primary > span > span.ux-textspans').text
+            price=soup.select_one('.x-price-primary .ux-textspans').text
             number = re.findall(r'\d+\.\d+', price)
             product['price'] = number[0]
         return product

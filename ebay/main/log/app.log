@@ -1,111 +1,61 @@
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:80
- * Running on http://192.168.8.76:80
+ * Running on http://127.0.0.1:1011
+ * Running on http://192.168.1.38:1011
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 143-684-196
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:52:58] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:52:58] "GET /static/css/styleUser.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:52:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:53:10] "[32mGET /logout HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:53:10] "GET /login HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:53:11] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:54:29] "POST /login HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:54:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:54:39] "[32mPOST /login HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:54:40] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:54:40] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:56:38] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:56:38] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:80
- * Running on http://192.168.8.76:80
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 143-684-196
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:59:32] "GET /?response_status_code=301 HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:59:32] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 14:59:32] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:80
- * Running on http://192.168.8.76:80
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 143-684-196
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:04:11] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:04:11] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:04:11] "GET /static/img/logo.png HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:04:37] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:09:36] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:09:36] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:09:36] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:11:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:11:52] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:11:52] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:13:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:13:52] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:13:52] "GET /static/css/logo.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:13:52] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:15:20] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:15:20] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:15:20] "GET /static/css/styleUser.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:15:20] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:02] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:02] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:03] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:03] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:06] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:06] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:07] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:07] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:09] "GET /all_url HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:09] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:09] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:09] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:13] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:13] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:13] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:13] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:15] "GET /all_url HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:15] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:16] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:16] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:20] "GET /register HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:20] "GET /static/css/stylesignup.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:21] "GET /static/js/signup.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:26] "POST /register_process HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:27] "GET /login HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:31] "[32mPOST /login HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:32] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:32] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:32] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:32] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:45] "[32mPOST /add_url_process HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:46] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:46] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:46] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:25:46] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:80
- * Running on http://192.168.8.76:80
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 143-684-196
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:26] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:26] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:26] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:26] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:44] "[32mPOST /add_url_process HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:45] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:45] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:46] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [29/Jun/2023 15:36:46] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 301-640-599
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:19:52] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:19:52] "GET /login?next=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:19:53] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:19:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:00] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:00] "GET /static/css/logo.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:00] "GET /static/css/styleUser.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:00] "GET /static/img/logo.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:15] "[32mPOST /add_url_process HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:15] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:15] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:15] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:23] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:23] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:23] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:26] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:42] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:47] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:50] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:55] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:55] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:55] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:57] "GET /all_url HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:58] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:58] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:58] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:59] "[32mPOST /delete_url/2d3b3355-e6e1-452b-84da-6cc2e443cb20 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:20:59] "GET /all_url HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:00] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:00] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:00] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:01] "[32mPOST /delete_url/d4690b7b-e82e-4cf5-9ba8-181d2897909e HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:01] "GET /all_url HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:01] "[36mGET /static/css/logo.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:01] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:01] "[36mGET /static/css/styleUser.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Jul/2023 20:21:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

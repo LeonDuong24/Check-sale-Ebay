@@ -37,7 +37,7 @@ def handle_exception(e):
 @login_required
 def delete_url(id):
     session.delet_url_with_id(id)
-    return redirect(url_for('index'))
+    return redirect(url_for('all_url'))
 
 
 @app.route('/delete_user/<string:id>', methods=['POST'])
@@ -163,7 +163,7 @@ def start_app():
     global is_flask_running
     is_flask_running = True
     
-    app.run(host='0.0.0.0', port=80,threaded=True)
+    app.run(host='0.0.0.0', port=1011,threaded=True)
 
 @login.user_loader
 def get_user(user_id):

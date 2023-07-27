@@ -62,7 +62,6 @@ def add_url(url,price_expected,user_id,option,name_product):
         option=option.strip()
         # input_dict = dict(item.strip().split(':') for item in option.split('/'))
         # option = ','.join([f'"{key}":"{value}"' for key, value in input_dict.items()])
-    print(option)
     user:models.User
     user=(models.User.query.get(user_id))
     hour=user.user_type.time_check
@@ -99,6 +98,7 @@ def check_price(url_id):
             crawler=models.CrawlData.query.get(url_id)
             ebay=EbayScraper(crawler.url,url_id)
             product=get_infor_product(ebay)
+            product['name']=crawler.name_product
             if float(product['price']) <= float(crawler.price_expected):
                 crawler.status='Done'
                 db.session.commit()
