@@ -64,10 +64,6 @@ def add_url_process():
         return redirect(url_for('index', response_status_code=301))
     else:
         flag, id=session.add_url(request.form['url'],request.form['price'],current_user.id,option,request.form['name_product'])
-        #session.check_price(id)
-        # response = Response(status=301)
-        # response.headers['Location'] = url_for('index')
-        # return response
         return redirect(url_for('index'))
 
 @app.route('/register')
@@ -107,7 +103,6 @@ def index():
 @app.route('/register_process', methods=['POST'])
 @login_required
 def register_user():
-    # Lấy dữ liệu từ request
     data = request.get_json()
     return user_service.save_new_user(data)
 
