@@ -52,7 +52,7 @@ All contributions are welcome. Please create a pull request if you have suggesti
 
 ## Author
 
-Your Name
+Leon Duong
 
 ## License
 
