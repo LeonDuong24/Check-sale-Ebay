@@ -11,9 +11,7 @@ This project is a Flask-based web application that allows users to input a link 
 - **Regular Price Checks:** Data is updated every minute from the product links in the database.
 
 - **Email Notifications:** Users receive email notifications if the product's price drops below the desired amount.
-- ![image](https://github.com/LeonDuong24/Check-sale-Ebay/assets/114995131/7b52da2c-3115-4c6f-9da0-de9d81c2c23f)
-
-
+- ![image](https://github.com/LeonDuong24/Check-sale-Ebay/assets/114995131/efbccae3-507c-4e59-959d-dd12fee6366c)
 - **Selenium-based Product Checking:** The application can check products with multiple options using Selenium.
 
 - **Authorization and Pagination:** The website supports user authorization and pagination for an improved user experience.
